@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+
+      nav {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        box-shadow: 0px 0px 3px 0px;
+        height: 8vh;
+      }
+
+      .searchbar {
+        display: flex;
+        padding: 15px;
+        width: 1000px;
+        border-radius: 22px;
+        border-color: rgb(0, 0, 0);
+        border: 1px solid black;
+      }
+
+      .search {
+        border: none;
+        outline: none;
+      }
+
+      .yt {
+        margin-left: 11px;
+        margin-right: 11px;
+      }
+
+      .Login {
+        background-color: #ffffff;
+        color: #5022c3;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-color: #5022c3;
+      }
+
+      .Sign {
+        background-color: #5022c3;
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .earth {
+        padding: 10px 20px;
+      }
+
+      .im {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ime {
+        width: 400px;
+        background-color: #ffffff;
+        height: 25vh;
+        border-radius: 30px;
+        position: absolute;
+        top: 20%;
+        margin-bottom: 10px;
+        margin-left: 400px;
+      }
+
+      .TY {
+        margin: 30px;
+      }
+
+      .p0 {
+        margin-left: 300px;
+        margin-top: 20px;
+      }
+
+      #p1 {
+        font-size: 35px;
+        font-family: var(--font-stack-text);
+        color: oklch(29.74% 0.0362 281.74deg);
+      }
+
+      #p2 {
+        font-family: var(--font-stack-text);
+      }
+
+      .card1 {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .card2 {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      #img1 {
+        border-radius: 5px;
+      }
+
+      .b1 {
+        width: 400px;
+        height: 300px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.158);
+      }
+
+      .b2 {
+        width: 250px;
+        height: 250px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.158);
+      }
+
+      #P1 {
+        font-size: 22px;
+      }
+
+      #b {
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.158);
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #all {
+        background-color: #a6a2e263;
+        color: #4e13e4;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-color: #5022c3;
+        margin-top: 20px;
+        margin-left: 300px;
+      }
+
+      .un {
+        display: flex;
+        /* align-items: center; */
+        justify-items: center;
+        justify-content: center;
+        /* margin-top: 200PX; */
+        margin: 100px;
+        gap: 99px;
+      }
+
+      #P2 {
+        font-weight: bold;
+      }
+
+      .img23 {
+        display: flex;
+        justify-items: center;
+        justify-content: end;
+        justify-content: space-between;
+        margin-left: 400px;
+        margin-right: 200px;
+        /* position: absolute; */
+      }
+      .h12 {
+        font-size: 25px;
+        margin-top: 160px;
+        font-weight: bold;
+      }
+      #ytyt {
+        font-size: 20px;
+        font-weight: 100;
+      }
+      .DV{
+        display: flex;
+        width: 200     PX;
+     justify-content: end;
+     margin-right: 200px;
+     background-color:#595c73;
+      }
+      .phase4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #ffffff;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 1480px;
+    gap: 20px;
+    h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    p{
+        font-weight: lighter;
+        font-size: larger;
+    }
+}
+.part2{
+    width: 1480px;
+    display: flex;
+    justify-content: space-between;
+}
+.part21,.part22,.part23{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    border-top: 8pt solid rgb(84, 6, 229);
+    width: 450px;
+    height: 640px;
+}
+.part21{
+    border-top: 8pt solid rgb(149, 43, 247);
+}
+.part2311{
+    background-color: #f4f3f3;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h3{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p{
+        font-size: small;
+        font-weight: lighter;
+    }
+    .i21{
+        padding: 10px;
+        padding-left: 0;
+    }
+}
+.part2122{
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:40px;
+    h4{
+        font-size: 25px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p{
+        font-size: small;
+    }
+    button{
+        background-color: rgb(84, 6, 229);
+        width: 100%;
+        height: 75px;
+        font-weight: 600;
+        font-size: larger;
+        color: #ffff;
+        border-radius: 5px
+    }
+    button:hover{
+        background-color: rgb(149, 43, 247);
+    }
+}
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="yt">
+        <img
+          src="https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg"
+          alt="Udemy"
+          width="91"
+          height="34"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <p>Explore</p>
+      </div>
+      <div class="searchbar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input class="search" type="text" placeholder="Search for anything" />
+      </div>
+      <div>
+        <p>Plans & Pricing</p>
+      </div>
+      <div>
+        <p>Udemy Business</p>
+      </div>
+      <div>
+        <p>Teach on Udemy</p>
+      </div>
+
+      <i class="fa-solid fa-cart-shopping"></i>
+
+      <div>
+        <button class="Login">Log in</button>
+        <button class="Sign">Sign up</button>
+        <button class="earth">
+          <i class="fa-solid fa-earth-americas" style="color: #000000"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="im">
+      <img
+        src="https://img-c.udemycdn.com/notices/web_carousel_slide/image/bb11a586-b613-49ee-b2b2-db27fe6d2ad4.png"
+      />
+    </div>
+    <div class="ime">
+      <div class="TY">
+        <h2>Improve the quality</h2>
+        <h2>and speed of your work</h2>
+        <br />
+
+        <p style="opacity: 50%">
+          Save on courses for applying AI to operational efficiency
+        </p>
+        <p style="opacity: 50%">
+          and the use of AI agents. Sale is on until Sept 30.
+        </p>
+        <br />
+        <button class="Sign">Explore courses for</button>
+      </div>
+    </div>
+    <div class="p0">
+      <p id="p1">Ready to reimagine your career?</p>
+      <p id="p2">
+        Get the skills and real-world experience employers want with Career
+        Accelerators.
+      </p>
+    </div>
+    <div class="card1">
+      <div class="b1">
+        <span>
+          <img
+            id="img1"
+            src="https://tse3.mm.bing.net/th/id/OIP.y6UP-O_rSo6lYTaHvbO_xQHaEN?w=680&h=387&rs=1&pid=ImgDetMain&o=7&rm=3"
+            width="350px "
+          />
+          <p id="P1">Full Stack Web Developer</p>
+          <button id="b">4.7</button>
+          <button id="b">459K rating</button>
+          <button id="b">87.8 total hours</button>
+        </span>
+      </div>
+      <div class="b1">
+        <span>
+          <img
+            id="img1"
+            src="https://lh3.googleusercontent.com/-37RFczfPbvg/Ywc1R3bIGTI/AAAAAAAAC28/vdnXcEmPgTgougkWyQ9h_nRvs7xqJVnXQCNcBGAsYHQ/s16000/AdobeStock_317830022.jpg"
+            width="350px"
+          />
+          <p id="P1">Digital Marketer</p>
+          <button id="b">4.4</button>
+          <button id="b">3.6K rating</button>
+          <button id="b">28.4 total hours</button>
+        </span>
+      </div>
+      <div class="b1">
+        <span>
+          <img
+            id="img1"
+            src="https://wallpapers.com/images/hd/data-science-concepts-illustration-xe1pmo7wm4jcokpd.jpg"
+            width="350px"
+          />
+          <p id="P1">Data Scientist</p>
+          <button id="b">4.6</button>
+          <button id="b">221K rating</button>
+          <button id="b">47.1 total hours</button>
+        </span>
+      </div>
+    </div>
+    <button id="all">All Career Accelerators</button>
+    <div class="p0">
+      <p id="p1">All the skills you need in one place</p>
+      <p>
+        From critical skills to technical topics, Udemy supports your
+        professional development.
+      </p>
+    </div>
+
+    <div class="un">
+      <div class="i1">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/3E0eIh3tWHNWADiHNBmW4j/3444d1a4d029f283aa7d10ccf982421e/volkswagen_logo.svg"
+        />
+      </div>
+      <div class="l11">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/2pNyDO0KV1eHXk51HtaAAz/090fac96127d62e784df31e93735f76a/samsung_logo.svg"
+        />
+      </div>
+      <div class="l22">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/3YzfvEjCAUi3bKHLW2h1h8/ec478fa1ed75f6090a7ecc9a083d80af/cisco_logo.svg"
+        />
+      </div>
+      <div class="l33">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/23XnhdqwGCYUhfgIJzj3PM/77259d1ac2a7d771c4444e032ee40d9e/vimeo_logo_resized-2.svg"
+        />
+      </div>
+      <div class="l44">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/1UUVZtTGuvw23MwEnDPUr3/2683579ac045486a0aff67ce8a5eb240/procter_gamble_logo.svg"
+        />
+      </div>
+      <div class="l55">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/1GoAicYDYxxRPGnCpg93gi/a8b6190cc1a24e21d6226200ca488eb8/hewlett_packard_enterprise_logo.svg"
+        />
+      </div>
+      <div class="l66">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/2tQm6aYrWQzlKBQ95W00G/c7aaf002814c2cde71d411926eceaefa/citi_logo.svg"
+        />
+      </div>
+      <div class="l77">
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/7guDRVYa2DZD0wD1SyxREP/b704dfe6b0ffb3b26253ec36b4aab505/ericsson_logo.svg"
+        />
+      </div>
+    </div>
+    <div class="p0">
+      <p id="p1">Trending courses</p>
+    </div>
+    <div class="card2">
+      <div class="b2">
+        <span>
+          <img
+            id="img1"
+            src="https://th.bing.com/th/id/OIP.1lknZdr2yIi9P6BzA6T6wQHaEJ?w=320&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+            width="200px "
+          />
+          <pre id="P2">
+100 Days of Code: The Complete
+Python Pro Bootcamp</pre
+          >
+          <button id="b1">4.7</button>
+          <button id="b1">459K rating</button>
+          <button id="b1">87.8 total hours</button>
+        </span>
+      </div>
+      <div class="b2">
+        <span>
+          <img
+            id="img1"
+            src="https://th.bing.com/th/id/OIP.4vyZQw8w4YzZgZw6ZQL82AHaEK?o=7&cb=12rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+            width="200px"
+          />
+          <pre id="P2">
+The Complete Agentic AI
+Engineering Course (2025)</pre
+          >
+          <button id="b1">4.4</button>
+          <button id="b1">3.6K rating</button>
+          <button id="b1">28.4 total hours</button>
+        </span>
+      </div>
+      <div class="b2">
+        <span>
+          <img
+            id="img1"
+            src="data:image/webp;base64,UklGRhAlAABXRUJQVlA4IAQlAAAwkQCdASo4AbQAPp1Amkilo6KiLVQtMLATiWxDxFQFmdKr+S6bsFXmvyc/L35n7Q/jf7l+rfy1+ZvfJ2r5nXRH/f+8D5c/7L/yf6L3j/qL2C/1r/3f9y68Xmi/pH+o/bX3fPTJ/f/Ud/yX+g64X0SfLv/cL4iv3Z9KD//5s76YfHP9F4s+cL5n+8clfsLzV+un9Dzc/6/iz8mvoD2Efyv+g/6bf8wC/nP9j/5/ps/kecn2i9gLhXfTvYD/pf+R9HXQw9bewf+vHXO/dX2lEknF1hOobA0R8+3zmMHkuniFdecOiYnYq7cyXcoeg/6MUyjnCfqGlg9ym+P17BgpOTHtmeafuXMYskgr/BrtpgAtmy/sZsme1KCrvfTkQ//sky/kl0W9Fxfw9PvUP6SUdIpq/9YJsPhtQKzdUSUlfwpSJv0JL2e+58Bb0UhiFBEFknamN4u1RW6aSnCY/+4qve4fDY7Ub68i/gbpCk4r9RGf/aSFg1KWTP/q98RDGjibMeX9MCa82By18opMtkapA4mfIYBqNaGcs5Ifz8TEEcJfjsirKYA+DsDtyWwkhEdnD5Uwi9t6fo7/QliZP+/R9vJncsxi/5Nhh2ckesUzSzk/LOpd6DdiXIAcCC9zKuWim67UWRYYG61lr6JLq38sD2R3iI9xGuCXVKo+YqO4dO0CVM6TiJrjntyymNB6hB0vATfRM9RuCujUkDGSvLZAE+HdUpplYo7Vr5ab05VGf9sQsBPLgaInHch7PZiWOo8dKklOAXQgXI8G/s8/67NTJuPqpcGMF75D6bJgpx8cBrmQuPzhT+UjYmZ6rFlkQTS0uLWFcLKbnGYWQp4e2BHEzCL364arOr70JSh/txROYLsWuqVQbwwjUDG3SatYztqawRY1xg2UMgy1ioiwlFmNZR8PBzcEZPKXJX9Lkw8+t4V7brtcMtbhkSTaBYyqmIMPL615CxjfghVbSY1UkdteDwcPtLtsgzzQfnMOclmEdNpq62tH6ICxiWYsyfi33xhcyysDv9b+hoivJBs5lu0mj6HMK44WNftjNIQglYowAFpGI4AK/QZu67v973ft3f/Gh9y3kis6LH5EGjdNniNv3ICQHPq1v6zktsELLha9i2CXK/9bhaX76lsWOSEK6ZHKE49DcHwl0SRAN4hSOvtvIr9TPiWH07BDzNeqo5zedzNJT8WVfnY9rYU4CyMrbtwWtIpEeeK0C6KkQM21XvS8RZw9JuOmgMeWWKOPd7xy15W3eRKzCDx98eVc3M/eP49OjX2r5kQl+m7GP3fqsEmv9SDo6SgcUHNso4LBJYEog8tOi+NczlB6Hfl1DUDismSujtMwtAiGAVUv2P2Ro4rjfF0EyDOUX83mtYe8WRIXHcBY/881K2lNKv36Odt3rez93+ARcUn/p2CedUxJ7lUqImmOr3xo0vg6aOUi6pQim1XlnmIPDUZjUGXjmY609+E4NTx3bALkDSkMl3xDDoeknerOOHDg6rQDvvWjXa2by0jDLF3vjtDWy28kTbRPj/Ns1DMIrEdgJt3m2TNbdTpR5/a/cYAA/to6j9engY9ttyyb9ijwf88LT3OxcSIhfX1f7vCKs2R9dxPNEAWcnagsVqLeFd8q3ouFGt4NG0kIPVhACFp/WWmJfRX9m8rsGZrpXOj5SFuN/0XVcWUobM9sCa1Yiv7oOBOd8Ay7ETfxuXc5/SpMDtiW5Dcs7M7v+oZ2wb/1gwCWEgBxyPUlu3Yygb6GdyNYuL6+XyGeB8NwOprkW1CsQhOEqIxbHhRJYB54yy2m31et6a85yxniHcE4WAHJpaN3rvZMOaPN0KIfzx97Spp/c8ooC8scwO5O/kfDxysHlkGCg29/O371FJeO2V3DbAlwffEOg64ZGTk69oEASfZvadlH/JKz/YCpUCcKBNw/n9Zxwrsqyduigde5S8CtX/6p1IvwAfE86f2Am0RprMh4mbQpIJJiQ5Yb6sL3B0VOgzL33y8Be7TzSE1e4UtYja9+hBTc1lGO+wmLXsl3Ro1tcTB83o4VdDab7/F8CBsXdKH9U6bfuTEmdwdeiZe9X9M1lDkiZt40q3FCwrt8DMpkl3MlbV2/OBpI8IS0rSM2kMx6O7g9QSw43Op0M+tkRTlQd5CzVej5Gn+q2NB9777wq5Ivr98rHoK3Xiq8jaWf99Fn47UdsDIKAblAb8BvEMAM3/qCpzs5JcFKLuK3xDmQNDoMrMQ8l+3NBhgv9YaAgErzVvUzjmDelddBFRgSQE2VCtM+dR3Pe2J7EdfwPEt8EKfP1rTzluQb8TTLblX/Ac//xFA/EUSxEBTvQni4DWwKsCc0I0a27Jb8jPwbK5I+2BwcrqpuJ31ruJZjHXdW0lZJqCv0doDc6cnQIHFMjujTw+xTz/1gcJyt/CyWA9L3lLKlayrZBiihXiRDPo/F7puH/JP/+Jyi4MBWMQE2RbYdM8L5qW9W9//a/p43S+Z5/g0tRiYQaSrkwgta9vg2xX81f0vpWDHifc2jjSYisFJh2FFN0s+kx3uJX1KPrXTuKR8Tw+DkuhKp9FcFZFJYCA5yvjUFZ+G/4CAfqkRw+oDZYnGi9RRPGe3mDBJEQ3fpUO3orEBRlIpknl2g+Ki6u7r+4fGaN7bU8PX68Jcq/P/7GWbd0HZVic9G+jMK941BsS/dXLWmBP8P1EA27C56KtGP29Cub9BJrUbl24YS0Jl8ADuhMPspGqouaFMZ1b7BKRDbw9em2nAgIuLOgA82goVun0hV302Ref754ug3L+cSzlltM9+ZFfefzzzRaiJfnRYsQhkUJqx0YTL+ewj++yQPjgRDCLe+Hc/mIxJWoR2/BIi214Zf7YPNyVafWSf9PAnNBgTNCIm9KIFb7rDDgbCbiEwAgHKePZCGXmCVJWZVM4naCuLhXwKvbs2OSPCcMSejq4n6HzwMsFFwVxeKLQYHe8y90zgMw7GXFwXpCLxHenFCcRAnnGjxLHgaYwYCo4cYGAQyt0vED2kRfxVkUxs0nGBMAQl/av6NPhpOjlDOgk9jURqmsQpJQx1jvknaIuvjnYG/r/rPQeF6TrwMcYVy3LE7DO42Q8DsGR/boiDE54dOTXhm4A/MHmp83DhWn6HYT9jfAEt8YLzzbzV8ceXuHrsBYqLVi0M8EDHPS6q0wQYY+H5mr/qq7tgdfJXbis3BTvom9AErwAjSm5rpCDcuGMFlMrSYpfSVh7aQ7jZQLyz3gmVsQ2AT9SMaTvKNgo6B/UTeRb5QKf7Tl3ZKjbDFKd5fTFsZunITW5bQf9m00cSX1wJyFOfe4TjZtDfyd1Xg8LxcsL41YqRWDBBLZkZ3PV8Y8Un7v1d4HG1sd5O8KCI0KOAhTXq3xsOa9r0VxnyleeFIdrAehcMe/bKHmsQDJwGEeoC5EDPHqvY1bV9YrFYKmyuOPOjvKArcgnhWy5KUq6z472kNsfcZNXUVE0ZfkAt++1J+iwMOmJvDe0gQvaCXnZaKyViNcc9sOHdfSUbbfYblcbsK9zLzP7+XiB7iKsj1ajNrgnfRWfvqTGcCn3X3oI6i/AXMWvKfenkEjuvpbj2r2dMMgzVgzhRsWDpDV0g0YEV93tw9F/kOjOZC/SIqOaPWRj0ceS1P2fze2Fb51TuRybb+U2Ks2e09N/3+uBASwQLcdBcsf53ruZ8ziN+YqcBULOc7AqiJUxrF1BxQTPqoEJcp/wSe2JkplQSpjWyxG/LMKSCfJCyawSIsh/tcI7npH6IigqWRfw9x3Zhs5Uz6HC9ntueZKxQS9ZvA47bXIOaOc8yx8ynwrenAdIctv9Xtcz6WlPWbvWxYuYx0sRTY192y9ub5jaKOJd9qBs1/GnK/5rhKMdQWziVppLlHDKAd8awey37UkzeNMf0MNsgAk0GV0SOnS4SKrrmPXExHAxPqU8g/rGY6G3yNlMJYof/5wvssqzzzvjoz+FMBHL45Js4tmkJw29LB0pYp9yi1DjLGXAUSaLYgk8oUKW5q4tTpnxLyb3P47uWSfE3vl98QkbSMiGme8QEXGiZL0KFJM676f2C3jiiEApJ8gR2LgDAU2VTmpjPjvzCABWqf2esHA2V/2mzNPRQj9LtVH6s1hlmKqvaoYOigtcut/yc7rZeqrxe0Nus63v8u7WqiCZCDFIdgR/zQ1TOCWfQU41KZvDB4bLMKZVY/4fbFyALrcMh0lgxlp/5dGJwcfqWQk6E2sJ1YuxBjPxy9kYl69hf6QQo1Pn3fosBrV94HVNt3xj1GmK0maKj0YjsJ8QHjiCYWzhhVYlOjztGCbwB3C0UJHTFAl1OX0cndXHwAuP5lv4fl02vp1zh1fIcRtyGOt/mJIJxAQlYvIs3IFMxUXDCn7KjZ78vfXgwS/OdkDXEVxMLwZkIi55KVjmSLlga3GeXY8eUfRH/ndQbEpd/bcdp9XbDA95fI7QPlg+xehniSPYSMlLi3ofGLzwT9L5m0RSwo/hDRKKiQd0Ao/nePjwhCGOygZjGN4aRqGh/rMn6lUCc8qGbHimS1Yko+/lB4DS6estDygvixS3Weh6X8vAa96MMLLyY2ygj4DNN9OUvLNauiUE/JFypwKoYlFLLqhY29Kb4jRxFRDltMtvGYbNlFz9FeNTdbf0xPdKeYGiWX5KxP0KJrIcW8qbX/B50XjUUgNm47004jqS+EGv7Yabu3WaBvWLUhWMlRRUGPm5KAgz6sI7opyS+wd4gWc7P938YKH9iuj2+jYkMPVOPk5pT4tpdu9A9S71iKt7XUzUQU9LyNGmA12k5gO1d0DDHshfnKyQXGYAWtGC5nTV5dxdOs1BG8yA7krvUXrDOIoFZMkDAbNdTYjTKl1JKyfF3PRuO/J5INolex4Twv2vM2DMvuBi2JWo14LdWTQv1HN+tTe5UvZYa3UG7NczP7DbG2leQEue0EjD5pI3IGI/PtmouCLLjrCkcO0NPq/zGav7aVAlM7FHI719b2ufwuh5kbEYqqmRIn4Edi1gAAzdyLqfUtFnVEOfgAdJqFJIOUPGbLnFT7lbqF4RNAmSpLbWj6HBwsD2OsC5iQrMeaDV+anDlg5rVP3U5KgbCFe6uhdlQj14ldcYzPct9yaTAwpKc+dojufrxZFRp7RyaXPIfpeUZ4/cGrBYIq3R99oEiyF1zuAwWT+5f6w8hSMQ8e9NB7KZ8yA8SxmKOJSSlgQSyfCIH5N3+DN0y8YSZKBjCE1Y+PzQD8ckaeHhkoIRx1fU4HVqT+sRHQSj2jyw66T6UtZfkKiw55UkTEBFV3zZqgEdLvlWhICYOZClyoafK6Po+LQDZExYlMjp0Z0idPWEjy+3tg7H1QEA00OSHnV9U9B7LQHXQAOwyDA7FTdlGLLw6aZH7xFkVMMMdzNn/mO3vgW8guCV2fG1PKnraYLVcdTw4sU370spILsSwGynXbWlGBxiaPI5s1Znfj5WA0pE85zcY9yJ7nj6YQKZnOZk4sycFvG7oAFfosgONJwZfqpZkqV8qiJcDjzW4Dp3Uy+B7bpF+ELIZBhhBx5J3ynonvM/NxgpyGU5a6kRohTs6KXz96pTha4n+5O7tElX0BnCz8TUYpLdR651QME079+zZF0KPSN875qXKw3t4L1Hu0tlBSiwRUFzFpDK9MRm4q4gFzVCWOaciZhrjNZDe8tjn2QX9X21IrFgge3OUXAQqWQgBq9GfLIEFdWDv/nB5fWy6mswPD2Ej3gpfkpE6J4G10GcsOdrTYyrHbrzbFnz1Ta2bv+Fjz7L38tSaCvsBf1Ox/hTAw8hrjKXRmX4CawTIUbWPnVjsuC3TuhTf8/oRx660kvgAyhqvYPsqYPzA8KaktxLsSzCziR7G9ZfkLsuldx/mRdMRjkYKstGTOHciN0eieq/J75s7/f7azwUAxhntlb/424YtNZ97EKxbJbwuwuK+1mHwpUHM3Kkel5hWY5VfGgTNKE1PqRwo8RRc4F9+5nO10h2/T0OTR3cDddYf/08Ajqs2wi5D+TMPb771ltN0L5Dnd7i/ij9Fa1Oo3LGWKFmfO3PhSeSuIjg6ZaIRio5NShCxi8FVz1ZVPuxe/qnfu0XJI3ol79SPsD5cWrbMO9aYm9zV8V//5jHjqrZBZbLmjXCmySYzDEn5Q38A0ktU5j9wEKMWhHvQ/bBg/m8ytVAQ8rX7VzE0Wvjn8T3NIqRdUtVqifZeKLFSTdqRG564D6bzwdNSVWaWLxJVx8FhnLAnA5GQc7ukW65hy2LtD3/p6dRNq4mFIybmKhyO0NV4D4L0rUyTOGou1aNxbeciBftGdurpWtkG5hnRELMFxJXyxFtT0H7VfagsUQFiV/v8zpN9UZkjMrvYrlR15dLkDogjXAuRe+iQUEaAs0UcSKDdcvheCfuydAIm/HJalp/C90D8rzGWyW1nS2sON27+2oUqELJ3JgCyA8X5te8ivSpUdn4QIh2AGONsXrJnl+4Prgs4QQ2Q87j06NGDY5drP5Tv5Xjj5b4ieRcS5ZfCBXVoOY4iRoRYrWPHLOemEvhwQI/6bKcp/pmpGrU1ziBXch4yOxrx79hUm4ceGnsx/xZiyIR1Bl54jsZ7sgEg0GzYyLxq0YKE/nL8PFJVviM7fCSlddqYkoMkDsckwQVfrH7QTDwppnBoT9KvWiM+o8lc94pUtTBKVM9mZ1gUECUJLV33dhoRkYujM/1TthDjbyytZYMIzq9+IyWjZHNGusUpwUDY1fFqF8hWuBx560mrlI+GcIji3uLeEmfVVJjeAI02e79l7HFgrvn2tdLrSgGZLApK/WHjpIffOSNk3wmcrlQcmKQBOpp+gER+gFkrYikeSbGwbte16w3YMcQ4/vMqKUXoeE9sAhJ6oQXe2fFtDJD2d2zBR8X2Mj9RL8tXMhLuQsndzovQqVLtpugXQFmS27ugCoX2YkqkVURjfKgEAMO0YTwc0vSQ34s8NvR6Pqz0W0xT9m6QxZbX8yWCVnvJHgKYYxpExQ0Lanx4ZtLyZxsbfNiSpwQQOPyZKUw3+Mh1q9IZte52Q8MzAnXPW7uRZuW6ikiTHxeBEB1YjwVYX7Ok3Y/QQgwyUfogpFQHlevR9AQWSgi1Zz4/4i11ZH5UV2TpY912wwJZjh5dSml+XiA9IJH6IjvhTPdKLmeXy4KJyS/X+RQ/Lk9yGwkzWn25h5esOg5oloJdxHW18ntLu2e2Y8pMjt3hWoPO4eQK5F23f5oZ9EVrArWMTZDT8WrP58HffiH/kRbRK6ry9k3tjDQDD0X8OyX+w6GeQNBjkXSfea7zzLAxLlbeLl38Jxg+oKZ7IbAJPtWfSfv32aiYFj9OXdNXm2fAR5cHBqGyTNuJf9UAZL3TTBFThqYrqXVUPlLrwb4zeZAdWkZGbMsN4LyDKf+59NBEOlQ8Y6cRFb+Z6DXtSnGgSKdNnysSTLrFrxxfe9H2X4W9QaVf0avd7GXegdoObf/z0y3aaW30baA+0mhVHyAAyl6PM0qD1SgmeW8DW4Q5nHG96YDHxrq7LHAMAwWOEDqntxIkHLr/DxTaSoDHvcgbo0iVr7Qb2HFpF9DyeGjcOXMnEgAfNBS37VR0EqbaIHmxOu7i5hgnFPc3WZEAebzW0KhU3q0ZTnApR/7Zqc9ali/dxMzjXP9biDbl4430zqtHFoABE2IK5vgH6/nhocAXzI6Jv5YsNmQmDUwriCjP+CFCRxbYIvKs2V+rHwGCyMMEzbaqbQM92z6WONKOpb9iJ9de+mex+0idkNbRo2FIXV6cI1FWZUgrk7Kd7FBi+2uK3pWzP8SouJ5RqjtZEsQz2QXpmO0ouQo8CJF+hIzZRi27gD3k3aBCVsmm5E1Owxv2jV+GjF177a84otlMQYBtHp2qw7tjSf+p5McZpoKcB0TdxTNK65dU0ONL75kG+QYk/Gj+iEJFDYwoDznrOGroLRZhOeupWIzT3N0GZyhN3ODI/Mv26vDrU9ULA/DK2dTyGUMf00nzTpDGRnBiD1AyjUqXfLzr5O+GyBwJL+Qi1jI5wido4yGbcFiSewhY+TlwxXPSFztCH2yh29WL7JpwRHrb/tOTSrQZaLhpOB2eeUM+n3MDogk6rKoKpwmlc4toF8qU561zSrQLdHHHi7Jb7tdRoXfliqcrQn4cp++DC6dqdmWTofPBOXRdxpuyVYRc/oOeeZC8fOcEx6NHvYpzmK3UQYNRjnzqGpuaKvw/1Gx5dUF2Xc37S1fmQaQBtH7jr+g/V9QhWGHhU4PUdpYNXA/h0BxpYBIE2Zv4Ox+7WHXuXOLnw5p4vZ3U8UJwMw3bz/6ZeSl6GnakPSPjG5zzhVBjEc7o+8SaXVH8H/A9sp0KQWtgmItpbE8O7SzuMUED2gwLUYRDF9io/EcNbioqceuvTjGv4UI3U7pQ/a6DoTBJ2Vh29naqk8VWfgNuiDgyR+SZpN3kuk5/8pVDeFQnxN731BYTWbxT0H1rHf751T45W2LUG731MQQtgG+Vo2Ep97lqAbdjXLKAPJeksvAKYskqfzv1q8PBWc7VfsDx4HrjYgxt7DimWhkkGqUzAZ5nAxxdjI6Z7VS8UStA+dcY464kAx37ZJo/4fR+94xZUddQ/axbMEdG8IlspCum/XuLkgZhqCfY0RpzuH7KJ+0NEEvRAZSTokmXYEcMJ9CUu/aRicOpYpSt1U5wPSlmqkACrJgNyGzZpvxjy9K0y4L+8eKQ7AXAxtPJRKjLiXRaa546bj9aoqMOCvk8iUdhcygAXt6bV1pGycPK19FAnh+mMLw6EXwkb2eJplBRbFvDKjtQw7FpuQr+Tplf8fOT1SNblF9rl2ZC34JNgeiLGCO7yfiWwav0Sbl3yOCBjzGHiEYHurJQjItRijHSwQm8iNj4S+UMof8dZby3vrggfFJanj9PR86FZbh7KUmZHgTkL3jpADZ4hF9ZsbQVYSpJumG3ZG4HNiHSDumIAYSHTA/rtPvHoyqRID8kI8LN3fWQDINvkqigQk0keFQQ0VjICDwmOqvWg4FYKGcaoODk95m710k+YVqczAv6XiIRzBXmPOlYcBYT8urfCpnsucqo1jGE5lw6SjEYiz6f2zA0XasdFgrsO4JqTZUe/HxC8OKka5dlNi1WXJWAYKmJ+QOLejFE+YuA06WklLTxF/II6x/SO8kWFZK+q189PSxNWVmHdUl8SZIQedPsNqNrzsFDulU78qPanl2C2CkocRRTgDUBeYQsRbdWroFpiGeNThL3zLXH3HszCn+CDXfH97ce8zfI2rD+3E4V/2CvwAWAhESkvR6oFwpOjLZdcLyTrBwxikk9tFX/40p6MNUL7JX87jnh6VGmxK4fJeNL/kWOANNqS8MmPLi3rgBdcxunDIEqPWBL61PK7Ydjoc1xeYUJ4mBA/FMzMy/jrhhYN6ly/yhK3xZpGnMhFZlYPfk1CrkWnNhkNYWPcBTZxYSpnoOg2qphJYRQiqSPjK1jm8PTj8aPcOa154cLLNlxV5cxwgkCR/ngmfx5yFf93kXdSNZjbCcM5t8lLou/v3Q3jxyXo9keciPovoSUbuFunYLMTkLbG3e4SdSgB8a0EPupXAwPSI+BnVtE14djwkzZx3hT0K0Z1ygReAETwMo5fQPkdueS6DgZDb1Cy58MCE6Psd63XVtUT8drP3slQAqN+1nZZWsP/Cgck3GJf/k/jHmoqqhi5WN1vwQrUqJvod7zQztVuRv0Ca+6Wo1fvQm8TV8X8IpmD8m1R7OHk7o7Vc3io3Sk8gvDSnAYFTkUoUFfFxDfYtOFA6CVEcu+IWc3OrOTEGAlbz8ew/LARfaQ0EeNozC4oDq4+8r1Lvfrt/rIYCWwJPqXym5fuhbPulgTVEtAYITE1A91rU0E88Iu4MVTcLrwPxRIb+0Iry8VaAxmOSEY3llTJbQhdfJkrwX/Npx3leXEgcob/VaMdbyoAUO4CaQPjygoLggh61xIq2Mhg9YtwckMWjB2wxWfwC/BdJ2CHzI88ysfx1lBEX1mkRQ6Ria5InjqRavxyEOa1czkjGWcZ/VTkJ+zDs6vNpYXu8do6sk6uwsOwIBW0JxORXS/Fl8GCH+nxjEZtahuUXaNWiC53NW7glW3jZ2loktGQClBBpJDc9VCPA2FJimLVUZbl00anlhETKwd0pERUPxMp5VmTErMgDAMCmempejOV6ZL8LX/hZYpIbixIv+TX81l/M8anRR/oEIHPyr1veWUJeShnkO0fpLWs0ipIU2KTIU0RqEFNoPn74IrW60LllF0gS4n0yUjdX6KRuoncRN/5MzX8cpBXCmjqd6Z5akcYWHM60hvrDWY6ssLlsWP5lczx6RB1IhrWobK6srzTxr/SzEuHh5hl1EHFZiD/luRvgjpnS14nOSVQZVqK2fEMvsrD7MhJWCgEOWgW8xYtRAycyEqpltElp/cxknRfX5w+dQjtXDX4hkCzfZXmJ+NSxhq52C7lSh375LP6E3PdO1sKbZwBtPpamkGmrWWZgsmn1K3ZbTgMgz1OdPgf7Mw36C5OY2+BxSNj/piwzY0bRXV6ZQKUtg+BkWVDLHGfnEPq89j6bXx8FpL1PIb2rEZ9ms764i79YK6yggiziwP/DJ1NcgemEZIfa+l4wAeduE9X31jVKe58EXilLjv7e3NuPlRJGUnZ8wW6bAMogViGZJf/unErFuOer9ncHkpC31cTEqVbKNC2F9ELHnPj3N+abRW9GV45mSw/srCtG8eENhpDkSrhnXdv8+zvD0ludb/0GSgkFYjBjpFn7M/uQMnk19o5UAzgrh/F0+iDSp3mW2uuvAvU567aFs5WGw77a3orRrVNty+PDozW0zL28gL79wfLsFGjTWkf4iRcN0s3WH2XFOBZ7DdjPeIe3nwJ1ZNrSlT+Png9twSmynrjIyUK3raZ+Rgq3XODOsiLJRwFST6Rn0CX+d2R9EwvS3Z+pmo8pmfgqY2E8+43333dCyq4HwbPy105AaB2cHzQQH11siPSOgteGKEhuhdSluoTYLDrfX6Lst/VzpJDXj8WT8qe8E+/3p3NWb9k82oqWNMdummd8Y81D7CAwVLhZTs7fWssgLZOEBumj3o6OzU62+s3/42sSXBLp5Rj9fMLj2lTG4Pkc1hVNv/vgQ7aLzyM2gxWPpr6xT3Ffq8kWLGXoOQGbz9GpYdXpyf6sB6j6oZqK8thfMhiGWM6F+c6sIIBiGjwyOUx85VbZ9UQgzyEEjty7L5cVdaUrIFxuJ3nw/PEWk+Em95ANMrsMEZGtHy/HYjj/WCd2MMONAp3UQ9/F+dtDtXWDZjojHwknO+kZHxRogn56QcHJoUjYkAh3o1XQJ6wvdXsRe9piJjYzRgeUIcastGcCHEdUED1h+OBrmO8TiIbmsu7VJ1zTDbHwSqITwGKqDVUzcdmF/b1/AlWIXJnZieG4Z8At+hBRUVzRFsiWafpQ3xPkCKu4sXDAF/D0WJsOiHyYoP1blSwX0EeWbNOGgCuOv+9Pt7AWrjZPPzn0Psljt2Z4oPhQtD7pH4boJom44HOfYUmhgzL6FjzPHtL/6N8l3oe6TEHyGEdFF7yVkR9NW+UR9qO7iqYYHvioXLcsWf7XxucQBPnQExY77yQP8uq0YStfxVNuRs1xJJkTVwUgDzqEsaRoH1IdL1j2AsIbCBL0QeRIfgnTC+Riair7BzOP1LrcIodFaFTlXE+M3L35bbtv/AmW9gcdxCNChC0EMf2L025ri4/te4djJCcghL7IF+x50aglSixYhtHWrDcLFK0Vugm1pFXDiHtERQh7yE4/31qLI7tPjtuVGvNlBNe1pgSfcbb8baAWiusptrNx9bZ19avd7npcy8Yqhr6CHlr13GlhnlOOpXMdq3xJNXTjo1ut5JIow4O3rp3TWY5bUmlpdOpkLpTcqAhGX4onCKWDLfUmgxMAR5+cPx0wwrVnjpgXRRbNlMAC9+Q2xI4IXbQZy2aj7nBUQABJbK/JPyh6lH8ytj6NNjP8/tSvZUPTiAevpRz3A5227HVvTxaSMn+CxBzUAZU2Ohads1k9Oy8bWmTQEConiMbIhS61VkuM1pBxmkaahCIVWGmtOrgRJ5IZLT3IVPF13Va8TXyrspI3LcfpEzYhxRvHa1A+RoG5L4vKULRPqV1W/Qo3rQ4HiqEapnU14ibm1zZP5K4YyX6vvsSFSY577hjLpgb13k+i33i9pQ4FCoLW36PIUZBMv3X2C95UugXOEhaj0hICrvlwK1Rjc7cuIHw5lT9b9bkjc6Ftzh4Ze3Mcxv1yFql8bGdP4iWxl/0/08BCbQ2X8KKv3ox+Xf7GnKOcpCQY3LU3tDosTQC2tQkYca0VC2YYx+frnEjVxadEGkJyF38Os+OHgtrWNHLmSJyb9UEgIdCeB9awZCyxoLL2yagUv32oj0m8VD5oB7+9GhFw/TsGJX1FEQ9dFY6Pf28BCq6nyCH1ngJ52pOnKUjlI7dy7F6wJCRqh3G/nHc5fuyEi3e9sPJSyohruZL33pq1ULp+xv+Qds977EvnEiJBNXBVkKriT6rDDTK0oDkPmTgaKwaRReTi+JskfFdnPi1Hw+rtdOmjybhK5xSenbjKiFr1QDE4jiuWisjSu8iQwAl6Jsc9FyxB6muAAW9rMpV9h1PgVHqIAfIuQ6OIkVsPAoBcF61TTcDlec7vB1W2ygAAA=="
+            width="200px"
+          />
+          <pre id="P2">
+The Complete Full-Stack Web
+Development Bootcamp</pre
+          >
+          <button id="b1">4.6</button>
+          <button id="b1">221K rating</button>
+          <button id="b1">47.1 total hours</button>
+        </span>
+      </div>
+      <div class="b2">
+        <span>
+          <img
+            id="img1"
+            src="https://th.bing.com/th/id/OIP.5rncffk3TrG_TrKZMJt1GAHaEK?w=315&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+            width="200px "
+          />
+          <pre id="P2">
+[New]Ultimate AWS Certified
+Cloud Practitioner CLF-CO2</pre
+          >
+          <button id="b1">4.7</button>
+          <button id="b1">459K rating</button>
+          <button id="b1">87.8 total hours</button>
+        </span>
+      </div>
+      <div class="b2">
+        <span>
+          <img
+            id="img1"
+            src="https://th.bing.com/th/id/OIP.P7TlZ2ZWEWDoBH4A7HVAZgHaEK?w=291&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3"
+            width="200px"
+          />
+          <pre id="P2">
+Ultimate AWS Certified Solution
+Architect Associate</pre
+          >
+          <button id="b1">4.4</button>
+          <button id="b1">3.6K rating</button>
+          <button id="b1">28.4 total hours</button>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="img23">
+        <div class="h12">
+          <h1>Get the 2026</h1>
+          <h1>Global Learning&</h1>
+          <h1>Skills Trends</h1>
+          <h1>Report</h1>
+          <section class="phase4">
+        <div class="part1">
+            <h1>Accelerate growth — for you or your organization</h1>
+            <p>Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.
+            </p>
+        </div>
+        <div class="part2">
+            <div class="part21">
+                <div class="part2311">
+                    <h3>Personal Plan</h3>
+                    <p>For you</p>
+                    <p class="i21"><i class="fa-solid fa-user"></i> Individual</p>
+                </div>
+                <div class="part2122">
+                    <h4>Starting at ₹500 per month</h4>
+                    <p>Billed monthly or annually. Cancel anytime.</p>
+                    <button>Starty Subscription <i class="fa-solid fa-arrow-right"></i></button>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Access to 26,000+ top courses
+                    </p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Certification prep</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Goal-focused recommendations</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> AI-powered coding exercises</p>
+                </div>
+            </div>
+            <div class="part22">
+                <div class="part2311">
+                    <h3>Team Plan</h3>
+                    <p>For your team</p>
+                    <p class="i21"><i class="fa-solid fa-user"></i> 2 to 50 people</p>
+                </div>
+                <div class="part2122">
+                    <h4>₹2,000 a month per user</h4>
+                    <p>Billed annually. Cancel anytime.</p>
+                    <button>Starty Subscription <i class="fa-solid fa-arrow-right"></i></button>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Access to 13,000+ top courses
+                    </p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Certification prep</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Goal-focused recommendations</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> AI-powered coding exercises</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Analytics and adoption reports
+                    </p>
+                </div>
+            </div>
+            <div class="part23">
+                <div class="part2311">
+                    <h3>Enterprise Plan</h3>
+                    <p>For your whole organization</p>
+                    <p class="i21"><i class="fa-solid fa-user"></i> More than 20 people</p>
+                </div>
+                <div class="part2122">
+                    <h4>Contact sales for pricing</h4>
+                    <button>Starty Subscription <i class="fa-solid fa-arrow-right"></i></button>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Access to 30,000+ top courses
+                    </p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Certification prep</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Goal-focused recommendations</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> AI-powered coding exercises</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Advanced analytics and insights
+                    </p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Dedicated customer success team
+                    </p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> International course collection
+                        featuring 15 languages</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Customizable content</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Hands-on tech training with
+                        add-on</p>
+                    <p><i style="color: green;" class="fa-regular fa-circle-check"></i> Strategic implementation
+                        services with add-on</p>
+                </div>
+            </div>
+        </div>
+    </section>
+          <pre id="ytyt">
+            
+If you or your organization are
+looking for help navigating change
+and AI transformation, you’ll find a
+roadmap for action in our popular
+annual report.</pre
+          >
+          <button id="all">Downlaod Now</button>
+        </div>
+
+        <img
+          src="https://cms-images.udemycdn.com/96883mtakkm8/BlUue9Lgty7lk3Gc1Ublo/53ac7130fb86e7505b9296c5e0922589/2026GlobalTrendsReportImageLOHPModule_1.png"
+          width="1400px"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="DV">
+        <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" />
+        <img
+          src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
+          height="44"
+          width="44"
+        />
+        <img
+          src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg"
+          height="44"
+          width="115"
+        />
+        <img
+          src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"
+          height="44"
+          width="115"
+        />
+      </div>
+    </div>
+  </body>
+</html>
